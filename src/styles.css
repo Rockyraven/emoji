@@ -2,3 +2,14 @@
   font-family: sans-serif;
   text-align: center;
 }
+input {
+  padding: 2rem;
+  width: 90%;
+}
+body {
+  background-color: rgb(222, 245, 216);
+}
+ h1{
+   color: red;
+   font-weight: bold;
+ }
