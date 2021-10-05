@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
-  "😊": "smile",
-  "👍": "like",
-  "😒": "sad",
-  "💕": "love",
+  "😊": "Smile",
+  "👍": "Like",
+  "😒": "Sad",
+  "💕": "Love",
   "🤟": "I LOVE YOU",
-  "😮": "surprise"
+  "😮": "Surprise",
+  "☠": "Danger",
+  "✌": "Victory",
+  "👌": "Awesome",
+  "🤝": "Handshake",
+  "👏": "Clapping"
 };
 var emojiWeknow = Object.keys(emojiDictionary);
 
@@ -30,7 +35,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1> emoji </h1>
+      <h1> Emoji Translater </h1>
 
       <input onChange={emojiInputHandler} />
 
@@ -40,7 +45,12 @@ export default function App() {
         return (
           <span
             onClick={() => emojiClicktHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer " }}
+            style={{
+              fontSize: "2rem",
+              padding: "1rem",
+              cursor: "pointer ",
+              borderRadius: "1rem"
+            }}
             key={emoji}
           >
             {emoji}
